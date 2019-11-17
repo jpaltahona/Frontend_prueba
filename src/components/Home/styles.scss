@@ -1,0 +1,72 @@
+@import '../../css/variables.scss';
+
+.contentHome{
+    height: 100vh;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionOne{
+        background-color: $bgPrimary;
+        position: relative;
+        overflow: hidden;
+        ul{
+        z-index: 1;
+          display: block;
+          list-style: none;
+            li{
+                display: block;
+                margin-bottom: 30px;
+                color: $colorWhite;
+                font-size: 20px;
+                font-weight: 600;
+                width: 100%;
+                svg{
+                    font-size: 37px;
+                    margin-right: 18px;
+                }
+            }
+        }
+        .bgIcon{
+            color: #1b95e0;
+            position: absolute;
+            width: 1058px;
+            height: 1075px;
+            left: 0%
+        }
+    }
+    .sectiontwo{
+        box-sizing: border-box;
+        padding: 30px;
+        width: 60%;
+
+        svg{
+            color: $colorSecundayFonts;
+            font-size: 45px
+        }
+        h1{
+            font-size: 27px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+        h5{
+            margin: 30px 0px 10px 0px;
+            font-size: 20px;
+        }
+        button{
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 50px;
+ 
+
+            a{
+                text-decoration: none;
+
+                &:hover{
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}
