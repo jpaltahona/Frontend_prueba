@@ -1,15 +1,15 @@
-import { TRAER_TODOS, CARGANDO, ERROR } from '../types/authTypes';
+import { GET_INFO, CARGANDO, ERROR } from '../types/profileTypes';
 
 const INITIAL_STATE = {
-    oauth: [],
-    cargando: false,
+    infoProfile: [],
+    cargando: true,
     error: ''
 }
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case TRAER_TODOS:
+        case GET_INFO:
             return { ...state, 
-                oauth: action.payload,
+                infoProfile: action.payload,
                 cargando: false
             };
     

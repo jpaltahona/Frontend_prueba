@@ -1,11 +1,11 @@
-import { TRAER_TODOS, ERROR } from '../types/authTypes';
+import { GET_INFO, CARGANDO, ERROR } from '../types/profileTypes';
 import Axios from 'axios';
 
-export const traerTodos = () => async (dispatch) => {
+export const getInfoProfile = () => async (dispatch) => {
     try{
-        const response = await Axios.get('http://localhost:8080/auth/twitter');
+        const response = await Axios.get('http://localhost:8080/users/acount')
         dispatch({
-            type: TRAER_TODOS,
+            type: GET_INFO,
             payload: response.data
         })
     }catch(error){
