@@ -1,4 +1,4 @@
-import { GET_INFO, CARGANDO, ERROR } from '../types/profileTypes';
+import { GET_INFO, ERROR } from '../types/profileTypes';
 import Axios from 'axios';
 
 export const getInfoProfile = () => async (dispatch) => {

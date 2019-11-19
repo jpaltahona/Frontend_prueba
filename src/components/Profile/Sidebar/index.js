@@ -30,7 +30,7 @@ const Sidebar = (props) => {
                   <IoMdListBox />  Listas
                 </li>
                 <li>
-                  <img src={props.profile} /> Perfil
+                  
                 </li>
                 <li>
                   < FiMoreHorizontal /> Más opciones

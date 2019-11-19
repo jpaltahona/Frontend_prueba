@@ -1,8 +1,8 @@
 import { TRAER_TODOS, CARGANDO, ERROR } from '../types/authTypes';
 
 const INITIAL_STATE = {
-    oauth: [],
-    cargando: false,
+    oauth: {},
+    cargando: true,
     error: ''
 }
 export default (state = INITIAL_STATE, action) => {

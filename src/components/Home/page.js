@@ -24,7 +24,7 @@ const Page = (props) =>  {
                                 Regístrate
                         </button>
                         <button className="btn btn-outline-primary">
-                            <a  href={`https://twitter.com/oauth/authenticate?oauth_token=${props.token}`}>
+                            <a  href={`http://localhost:4000/auth/twitter`}>
                                 Iniciar Sesion
                             </a>
                         </button>
