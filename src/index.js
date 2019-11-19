@@ -8,16 +8,18 @@ import './index.scss';
 import * as serviceWorker from './serviceWorker';
 import combineReducers from './redux/reducers';
 import 'bootstrap/dist/css/bootstrap.css'
-const store = createStore(
-    combineReducers,
-    {},// initial State
-    applyMiddleware(reduxThunk)
-    );
+
+const store= createStore(
+        combineReducers, // todos los reducer de mi aplicacion
+        {}, // stado inicial
+        applyMiddleware(reduxThunk)
+);
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+        <Provider store ={store} >
+                <App />
+        </Provider>,
+
 document.getElementById('root'));
 
 serviceWorker.unregister();
